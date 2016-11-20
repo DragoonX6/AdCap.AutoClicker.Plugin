@@ -13,7 +13,7 @@ The necessary (binary) files can be found on Hongfire: [ReiPatcher](http://www.h
 
 ## How to build (for real this time)
 1. Make sure you downloaded and installed all the prerequisites.
-2. Navigate to the AdCap managed folder (commonly `C:\Program Files (x86)\Steam\steamapps\common\AdVenture Capitalist\adventure-capitalist_Data\Managed`) and copy `Assembly-CSharp.dll`, `Assembly-CSharp-firstpass.dll`, `UnityEngine.dll`, and `UnityEngine.UI.dll` to the References folder.
+2. Navigate to the AdCap managed folder (commonly `C:\Program Files (x86)\Steam\steamapps\common\AdVenture Capitalist\adventure-capitalist_Data\Managed`) and copy `Assembly-CSharp.dll`, `Assembly-CSharp-firstpass.dll`, `UnityEngine.dll`, `UnityEngine.UI.dll`, and `UnityInjector.dll` to the References folder.
 3. Copy UnityInjector.dll to the References folder.
 4. Open a commandprompt and execute the following command `C:\Windows\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe AdCap.AutoClicker.Plugin.sln /p:Configuration=Release /p:Platform="X86"`
 5. The resulting plugin can be found in `AdCap.AutoClicker.Plugin\bin\Release`
