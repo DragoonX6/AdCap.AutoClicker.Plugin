@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdCap.AutoClicker.Plugin", "AdCap.AutoClicker.Plugin\AdCap.AutoClicker.Plugin.csproj", "{78D0F7EB-A59B-4F93-B873-201D16AE0090}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|X86 = Debug|X86
+		Release|X86 = Release|X86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{78D0F7EB-A59B-4F93-B873-201D16AE0090}.Debug|X86.ActiveCfg = Debug|X86
+		{78D0F7EB-A59B-4F93-B873-201D16AE0090}.Debug|X86.Build.0 = Debug|X86
+		{78D0F7EB-A59B-4F93-B873-201D16AE0090}.Release|X86.ActiveCfg = Release|X86
+		{78D0F7EB-A59B-4F93-B873-201D16AE0090}.Release|X86.Build.0 = Release|X86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
