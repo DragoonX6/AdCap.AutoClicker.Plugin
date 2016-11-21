@@ -26,18 +26,14 @@ namespace AdCap.AutoClicker.Plugin
 		public void Awake()
 		{
 			DontDestroyOnLoad(this);
-			Console.WriteLine("In Awake()");
+			Console.WriteLine("Auto clicker initialized.");
 		}
 
 		public void OnLevelWasLoaded(int level)
 		{
-			Console.WriteLine("In OnLevelWasLoaded(int level)");
-			Console.WriteLine("Starting coroutine to find Mars booster");
 			StartCoroutine(FindMarsBooster());
-
-			Console.WriteLine("Starting coroutine to find micromanager.");
 			StartCoroutine(FindMicroManager());
-			
+
 			lastClick = 0.0f;
 		}
 
@@ -50,24 +46,19 @@ namespace AdCap.AutoClicker.Plugin
 			ProfitBoosterView boosterView = FindObjectOfType<ProfitBoosterView>();
 			if(boosterView)
 			{
-				Console.WriteLine("Found Mars profit booster");
+				Console.WriteLine("Found Mars profit booster!");
 				booster = boosterView.Booster.Value;
-				if(booster != null)
-				{
-					Console.WriteLine("Got reactive property!");
-				}
 
 				OnFightBack = booster.GetType().GetMethod("OnFightBack",
 					BindingFlags.NonPublic | BindingFlags.Instance);
 
 				if(OnFightBack != null)
 				{
-					Console.WriteLine("Got method!");
 					foundMarsBooster = true;
 				}
 				else
 				{
-					Console.WriteLine("Didn't get method.");
+					Console.WriteLine("Unable to extract clicking method for Mars profit booster.");
 					foundMarsBooster = false;
 				}
 

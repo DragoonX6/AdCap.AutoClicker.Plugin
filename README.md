@@ -25,6 +25,7 @@ The necessary (binary) files can be found on Hongfire: [ReiPatcher](http://www.h
 3. Enter the `ReiPatcher` folder and create a new folder called `Patches`.
 4. From the UnityInjector archive, drop `ReiPatcher\UnityInjector.Patcher.dll` in the `Patches` folder.
 5. In the `ReiPatcher` folder, create a new file called `AdCap.ini` and put the following contents in the file:
+
 		;Adventure Capitalist - ReiPatcher Configuration File
 		;
 		;InstallPath
